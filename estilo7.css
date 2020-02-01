@@ -1,0 +1,301 @@
+nav{
+    width: 580px;
+    margin: 30px auto;
+    background-color: aquamarine;
+    color: darkgreen;
+    text-align: right;
+    border-block: black;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 20px;
+    text-transform: uppercase; /* serva para mudar a letra para maiuscula*/
+    transition: background-color 1s;/* serve para que demore um tempo a troca de cor*/
+}
+ul{
+    list-style: none; text-decoration: none;
+}
+li{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav:hover{/* serve para cambiar de color ao passar o mause*/
+    background-color: #cec9c9;
+    color: red;
+}
+title{
+    display: inline;
+}
+#cab{
+    text-align: center;
+    background-color: rgb(247, 10, 10);
+    color: rgb(166, 241, 166);
+    border: 2px;
+    border-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#hamburguer{
+    display: none;
+}
+.block{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    max-width: 910px;
+    max-height: 300px;
+    background-color: aqua;
+}
+
+#cx1{
+    margin-top: 50px;
+    margin-left: 250px;
+    float: left;
+    transform: rotate(8deg);
+    font-size: 10px;
+    color: red;
+}
+#cx2{
+    margin-top: 80px;
+    float: left;
+    transform: rotate(82deg);
+    font-size: 10px;
+    color: red;
+    text-align: right;
+}
+#cx3{
+    margin-top: 80px;
+    transform: rotate(8deg);
+    font-size: 10px;
+    color: red;
+    
+}
+#cx4{
+    float: left;
+    transform: rotate(90deg);
+    font-size: 10px;
+    color: red;
+    margin-left: 250px;
+    margin-right: 10px;
+    margin-top: 60px;
+}
+#cx5{
+    float: left;
+    transform: rotate(270deg);
+    font-size: 10px;
+    color: red;
+    text-align: right;
+    margin-left: 5px; 
+    margin-top: 60px;
+}
+#cx6{
+    margin-top: 90px;
+    font-size: 10px;
+    color: red;
+    margin-top: 20px;
+    margin-left: 5px;   
+}
+#cx1:hover{
+    transition: 1.5s;
+    transform: rotate(0deg);
+}
+#cx2:hover{
+    transition: 1.5s;
+    transform: rotate(90deg);
+}
+#cx3:hover{
+    transition: 1.5s;
+    transform: rotate(0deg);
+}
+#cx4:hover{
+    transition: 1.5s;
+    transform: rotate(450deg);
+}
+#cx5:hover{
+    transition: 1.5s;
+    transform: rotate(-450deg);
+}
+#cx6:hover{
+    transition: 1.5s;
+    transform: translate(360deg);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#block3{
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+#texto{
+    float: right;
+    width: 300px;
+    height: 500px;
+    background-color: green;
+    margin-right: 80px;
+}
+.img{
+    max-width: 1000px;
+    max-height: 750px;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+p{
+    text-align: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#baia{
+    width: 95%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.contato{
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+/*FORMTACAO RESPONSIVE*/
+@media only screen and (max-width:500px){
+    #hamburguer{
+        display: block;
+    } 
+    title{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1447px){
+    #texto{
+        width: 90%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    .img{
+        max-width: 1250px;
+    max-height: 900px;
+    }
+
+}
+
+@media only screen and (max-width:643px){
+    #cx1{
+        margin-left: 280px;   
+    }
+    #cx2{
+        margin-left: 200px; 
+        margin-top: 20px;
+    }
+    #cx3{
+        margin-left: 200px; 
+        margin-top: 20px;
+    }
+    #cx4{
+        margin-left: 200px; 
+        margin-top: 20px;
+    }
+    #cx5{
+        margin-left: 200px; 
+        margin-top: 20px;
+    }
+    #cx6{
+        margin-left: 200px; 
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:1050px){
+    #cx1{
+        margin-left: 80px;   
+    }
+    #cx2{
+        margin-left: 40px; 
+        margin-top: 20px;
+    }
+    #cx3{
+        margin-left: 80px; 
+        margin-top: 20px;
+    }
+    #cx4{
+        margin-left: 30px; 
+        margin-top: 20px;
+    }
+    #cx5{
+        margin-left: 40px; 
+        margin-top: 20px;
+    }
+    #cx6{
+        margin-left: 30px; 
+        margin-top: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 376px){/*Iphone6*/
+    #hamburguer{
+        display: block;
+        font-size: 50px;
+    }
+    #cab{
+        text-align: center;
+    }
+    #cx1{
+        margin-left: 40px;   
+    }
+    #cx2{
+        margin-left: 40px; 
+        margin-top: 20px;
+    }
+    #cx3{
+        margin-left: 80px; 
+        margin-top: 20px;
+    }
+    #cx4{
+        margin-left: 30px; 
+        margin-top: 20px;
+    }
+    #cx5{
+        margin-left: 40px; 
+        margin-top: 20px;
+    }
+    #cx6{
+        margin-left: 30px; 
+        margin-top: 20px;
+    }
+    #texto{
+        margin-right: 30px;
+    }
+    .img{
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 90%;
+    }
+    #baia{
+        width: 90%;
+    }
+    .contato{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width:361px){/*GalaxyS6*/
+    #hamburguer{
+        font-size: 40px;
+    }
+}
